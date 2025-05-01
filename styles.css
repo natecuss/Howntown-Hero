@@ -1,0 +1,153 @@
+/**
+/* CSS HSL */
+/* --night: hsla(157, 100%, 4%, 1);
+--rose-taupe: hsla(10, 23%, 45%, 1);
+--slate-gray: hsla(200, 13%, 48%, 1);
+--lavender-web: hsla(222, 100%, 92%, 1);
+--celadon: hsla(130, 41%, 67%, 1); */
+
+body {
+    margin: 0;
+    text-align: center;
+    border: solid 5px #ffffff;
+    font-family: 'Inter', sans-serif;
+}
+
+img {
+    width: 100px;
+}
+
+h1 {
+    color: hsla(222, 100%, 92%, 1);
+    background-color: hsla(157, 100%, 4%, 95%);
+    padding: 20px;
+    text-align: center;
+    border-radius: 20px;
+    font-size: 40px;
+}
+
+h2 {
+    color: hsla(157, 100%, 4%, 95%);
+    background-color: hsla(222, 100%, 92%, 1);
+    font-size: 32px;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 20px;
+    width: fit-content;
+    display: inline-block;
+}
+
+h3 {
+    color: hsla(157, 100%, 4%, 95%);
+    background-color: hsla(222, 100%, 92%, 90%);
+    font-size: 20px;
+    padding: 15px;
+    border-radius: 20px;
+}
+
+h4 {
+    color: hsla(222, 100%, 92%, 1);
+    font-size: 24px;
+}
+
+.hero {
+    background-image: url(images/Uintah\ Street.jpeg);
+    width: 100%;
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px 20px 0 0;
+}
+
+.activites {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.activites-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: auto;
+    padding: 20px;
+    background-color: hsla(130, 41%, 67%, 1);
+    border-radius: 20px;
+}
+
+.activites p {
+    max-width: 300px;
+    margin: 0 auto;
+    text-align: justify;
+    line-height: 1.5;
+}
+
+.activites-container img {
+    width: 250px;
+    height: 250px;
+    border-radius: 100%;
+    border: ridge 5px hsla(10, 23%, 45%, 1);
+    object-fit: cover;
+    transition: transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out; /* Smoother and slower transition */
+}
+
+.activites-container .image {
+    width: 250px;
+    height: 250px;
+    border-radius: 100%;
+    border: ridge 5px hsla(10, 23%, 45%, 1);
+    background-size: cover;
+    background-position: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, opacity 0.3s ease;
+}
+
+.activites-container img:hover {
+    transform: scale(1.1); /* Enlarge the image to 1.2x its original size */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); /* Add a shadow effect */
+}
+
+.about p {
+    max-width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 1.5;
+    color: hsla(130, 41%, 67%, 1);
+    background-color: hsla(157, 100%, 4%, 1);
+    padding: 20px;
+    border-radius: 20px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.about button {
+    background-color: hsla(130, 41%, 67%, 1);
+    color: hsla(157, 100%, 4%, 1);
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    margin: 20px;
+}
+
+.guide img {
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    border: ridge 5px hsla(10, 23%, 45%, 1);
+    object-fit: cover;
+}
+
+.guide h4 {
+    color: hsla(157, 100%, 4%, 95%);
+}
